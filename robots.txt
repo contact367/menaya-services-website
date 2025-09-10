@@ -1,3 +1,26 @@
+/* --- Fix bouton Envoyer (toujours visible, mobile + desktop) --- */
+.actions .btn,
+button[type="submit"] {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important; /* iOS/Safari */
+  text-shadow: none !important;
+  background: #b18c47;          /* ton doré */
+  border: 1px solid #b18c47;
+  border-radius: 28px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-indent: 0 !important;
+}
+
+.actions .btn:hover,
+button[type="submit"]:hover {
+  filter: brightness(1.06);
+}
 User-agent: *
 Allow: /
-Sitemap: https://www.menaya-services.com/sitemap.xml
+
+Sitemap: https://menaya-services.com/sitemap.xml
