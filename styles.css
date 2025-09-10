@@ -66,3 +66,38 @@ textarea{min-height:120px;resize:vertical}
   .reveal{opacity:0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease}
   .reveal.in{opacity:1; transform: translateY(0)}
 }
+/* Correction bouton Envoyer sur mobile */
+button.btn[type="submit"] {
+  font-size: 16px !important;
+  color: #fff !important;      /* adapte la couleur si besoin */
+  text-indent: 0 !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+button.btn[type="submit"]::before,
+button.btn[type="submit"]::after {
+  content: none !important;
+}
+/* --- Fix bouton Envoyer (toujours visible, mobile + desktop) --- */
+.actions .btn,
+button[type="submit"] {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important; /* iOS/Safari */
+  text-shadow: none !important;
+  background: #b18c47;          /* ton doré */
+  border: 1px solid #b18c47;
+  border-radius: 28px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-indent: 0 !important;
+}
+
+.actions .btn:hover,
+button[type="submit"]:hover {
+  filter: brightness(1.06);
+}
