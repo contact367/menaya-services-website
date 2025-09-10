@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://menaya-services.com/sitemap.xml
+Sitemap: https://www.menaya-services.com/sitemap.xml
